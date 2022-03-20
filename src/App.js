@@ -1,3 +1,4 @@
+import CurrentDate from "./CurrentDate";
 import CurrentTime from "./CurrentTime";
 import Header from "./Header";
 
@@ -5,7 +6,10 @@ function App() {
   return (
     <div>
       <Header/>
-      <CurrentTime/>
+      <div style={{display: "flex", justifyContent: "space-around"}}>
+        <CurrentDate/>
+        <CurrentTime/>
+      </div>
     </div>
   );
 }
